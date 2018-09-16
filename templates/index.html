@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Twilio Click to Call for Heroku and Flask</title>
+      <!-- We use Twitter Bootstrap as the default styling for our page-->
+      <link rel="stylesheet" 
+          href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" 
+          href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
+        <!-- Include CSS for our third-party telephone input jQuery plugin-->
+      <link rel="stylesheet" href="/static/styles/intlTelInput.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Alertifyt</h1>
+        <p>
+            Alertify provides an easy way for your customers to contact the elderly and support teams removely.
+        </p>
+        <p>Here's an example of how it's done!</p>
+        <hr>
+
+        <!-- C2C contact form-->
+        <div class="row">
+            <div class="col-md-12">
+                <form id="contactForm" role="form">
+                    <div class="form-group">
+                        <h3>Call Elderly</h3>
+                        <p class="help-block">
+                            We've been notified of a call. Are you OK? Say Yes if you are. With other response, we will contact emergency medical services for immediate support.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="phoneNumber" 
+                            placeholder="(651) 555-7889" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-default">
+                        Call Elderly
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Include page dependencies -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/static/js/intlTelInput.min.js"></script>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
